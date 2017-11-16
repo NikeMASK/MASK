@@ -7,6 +7,7 @@
 test/
 lib/
 target/
+out/
 
 
 # custom
