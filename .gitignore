@@ -4,8 +4,9 @@
 *.so
 
 # Folders
-_obj
-_test
+test/
+lib/
+target/
 
 
 # custom
