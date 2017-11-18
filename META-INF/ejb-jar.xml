@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ejb-jar xmlns="http://java.sun.com/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+		  http://java.sun.com/xml/ns/javaee/ejb-jar_3_1.xsd"
+         version="3.1">
+    <enterprise-beans>
+        <session>
+            <ejb-name>AppMarkdownsEJB</ejb-name>
+            <ejb-class>MASK.EJBs.AppMarkdownsBean</ejb-class>
+            <session-type>Stateless</session-type>
+            <transaction-type>Bean</transaction-type>
+        </session>
+        <session>
+            <ejb-name>EquipMarkdownsEJB</ejb-name>
+            <ejb-class>MASK.EJBs.EquipMarkdownsBean</ejb-class>
+            <session-type>Stateless</session-type>
+            <transaction-type>Container</transaction-type>
+        </session>
+        <session>
+            <ejb-name>FwMarkdownsEJB</ejb-name>
+            <ejb-class>MASK.EJBs.FwMarkdownsBean</ejb-class>
+            <session-type>Stateless</session-type>
+            <transaction-type>Container</transaction-type>
+        </session>
+        <session>
+            <ejb-name>KnownTheftEJB</ejb-name>
+            <ejb-class>MASK.EJBs.KnownTheftBean</ejb-class>
+            <session-type>Stateless</session-type>
+            <transaction-type>Container</transaction-type>
+        </session>
+        <entity id="AppMarkdownsEntity">
+           <ejb-name>AppMarkdownsEntity</ejb-name>
+           <ejb-class>MASK.Model.AppMarkdownsEntity</ejb-class>
+       </entity>
+        <entity id="EquipMarkdownsEntity">
+           <ejb-name>EquipMarkdownsEntity</ejb-name>
+           <ejb-class>MASK.Model.EquipMarkdownsEntity</ejb-class>
+       </entity>
+        <entity id="FwMarkdownsEntity">
+           <ejb-name>FwMarkdownsEntity</ejb-name>
+           <ejb-class>MASK.Model.FwMarkdownsEntity</ejb-class>
+       </entity>
+        <entity id="KnownTheftEntity">
+           <ejb-name>KnownTheftEntity</ejb-name>
+           <ejb-class>MASK.Model.KnownTheftEntity</ejb-class>
+       </entity>
+    </enterprise-beans>
+
+</ejb-jar>
+
+
+
